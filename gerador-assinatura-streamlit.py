@@ -3,7 +3,7 @@ import streamlit as st
 
 st.title("Gerador de assinatura email Century Data")
 
-nome_sobrenome = st.text_input('Insira o seu nome e sobrenome', '')
+nome_sobrenome = st.text_input('Insira o seu nome e sobrenome', 'Nome Sobrenome')
 email = st.text_input('Insira o seu email', 'nome.sobrenome@centurydata.com.br')
 telefone_original = st.text_input('Insira o seu telefone de acordo com o formato', '(11) 987654321')
 telefone_apenas_numeros = ''.join(re.findall(r'\d+', telefone_original))
